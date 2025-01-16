@@ -1,0 +1,11 @@
+import tkinter as tk
+root = tk.Tk()
+root.title("座標を指定して配置する")
+root.geometry("400x300")
+static1 = tk.Label(text="ラベル文字")
+static1.place(x=100,y=100)
+entry1 = tk.Entry()
+entry1.place(x=100,y=200)
+button1 = tk.Button(text="ボタン")
+button1.place(x=200,y=250)
+root.mainloop()

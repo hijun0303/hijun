@@ -1,0 +1,6 @@
+fp = open("uranai.txt","r",encoding="utf-8")
+rs = fp.readline()
+fp.close()
+# print(rs)
+info = rs.split(",")
+print(info[1])

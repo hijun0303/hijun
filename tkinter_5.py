@@ -1,0 +1,15 @@
+import tkinter as tk
+root = tk.Tk()
+def get_entry(event):
+     entry1_value = entry1.get()
+     print(entry1_value)
+root.title("アクションボタンを作ろう")
+root.geometry("400x300")
+static1 = tk.Label(text="テキストボックスとボタンを作る")
+static1.pack()
+entry1 = tk.Entry()
+entry1.pack()
+button1 = tk.Button(text="ボタン")
+button1.bind("<Button-1>",get_entry)
+button1.pack()
+root.mainloop()
